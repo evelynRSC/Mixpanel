@@ -7,9 +7,9 @@ The [implementation plan](https://docs.google.com/spreadsheets/d/1lqBAx5N1Dn4QFr
 1. Naming Convention
 2. Events Spec
 3. Dev Implementation Plan
-4. User Properties
+4. User Properties (Custom, Default and Reserved)
 
-The Events Spec sheet contains all of the events and properties, along with their descriptions and associated KPIs. This sheet is intended to be used by RSC staff. The Dev Implementation Plan also contains all of the events and properties, as well as example method calls for each event and is intended to be used by any developers. Please utilize and update the "Developer Notes" and "Implemented?" sections.
+The Events Spec sheet contains all of the events and properties, along with their descriptions and associated KPIs. This sheet is intended to be used by RSC staff. The Dev Implementation Plan also contains all of the events and properties, as well as example method calls for each event and is intended to be used by any developers. Neither the Events Spec nor the Dev Implementation plan include Mixpanel's [default event properties](https://help.mixpanel.com/hc/en-us/articles/115004613766-Default-Properties-Collected-by-Mixpanel), however it is expected that they are tracked. Please utilize and update the "Developer Notes" and "Implemented?" sections.
 
 ### How to Use Mixpanel.js
 The Mixpanel.js file holds all of the functions to be called in the SRC. The variables are fabricated and were added for the sake of clarity, but can be implemented as is. 
