@@ -23,3 +23,5 @@ Things to Note when Merging:
 * When exporting the historical data, perform any transformations needed, e.g. renaming events to fit updated implementation. 
 * Events are written immutably in Mixpanel's servers. This means that you can export some events from one project and re-import them into another project, but it is not possible to delete the events from the first project. 
 * The timestamps of the events have been written in your project timezone and will therefore be exported as such. Before reimporting these events into the new project, it will be necessary to convert these event timestamps into UTC.
+
+[MTUs are billed](https://help.mixpanel.com/hc/en-us/articles/360001465686) per project, so if a user performs a qualifying event in multiple projects, they are counted once per project. It is important to delete the old projects once the new implementation is up and running and the projects have been merged.
