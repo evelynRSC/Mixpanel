@@ -531,3 +531,12 @@ function articleUnbookmarked(article) {
     mixpanel.people.increment("# of Articles Bookmarked", -1);
     mixpanel.people.remove("Reading List", article.title);
 }
+
+// This function executes when a user views a social media page
+function socialViewed(page) {
+    mixpanel.track("Socials Viewed", {
+        "Social Media Platform": page.social_platform, 
+        "Triggered On": page.trig_subdir, 
+        "CTA": page.button
+    });
+}
